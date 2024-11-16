@@ -100,12 +100,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
          $error = processImage($lastId);
          if($error){
-            $_SESSION["mali"] = $error;
+            $_SESSION["error"] = $error;
             header("location: ".BASE_URL."views/admin/products/add.php");
             exit;
          }
          
-         $_SESSION["tama"] = "product added successfully";
+         $_SESSION["success"] = "product added successfully";
          header("location: ".BASE_URL."views/admin/products/index.php");
         exit;
     

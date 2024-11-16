@@ -34,12 +34,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                 $_SESSION["fullname"]=$user[0]["fullname"];
                 $_SESSION["is_admin"]=$user[0]["is_admin"];
 
-                $_SESSION["tama"]="Registration successful";
+                $_SESSION["success"]="Registration successful";
                 header("location: /index.php");
                 exit;
             } else{
                 header("location: /login.php");
-                $_SESSION["mali"]="Insert error";
+                $_SESSION["error"]="Insert error";
                 exit;
                     // hello world
             }
