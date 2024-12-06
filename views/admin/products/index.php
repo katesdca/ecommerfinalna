@@ -2,7 +2,7 @@
 
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
-require_once(ROOT_DIR."includes\header.php");
+require_once(ROOT_DIR."includes/header.php");
 
 if(isset($_SESSION["errror"])){
     $messErr = $_SESSION["error"];
@@ -16,7 +16,7 @@ if(isset($_SESSION["success"])){
 include(ROOT_DIR. "app/product/get_product.php")
 ?>
 <?php
-require_once(ROOT_DIR."includes\\navbar.php");
+require_once(ROOT_DIR."includes//navbar.php");
 ?>
     <!-- page guard  -->
     <?php require_once(ROOT_DIR."views/components/page-guard.php"); ?>

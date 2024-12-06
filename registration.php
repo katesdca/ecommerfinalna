@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
-require_once("includes\header.php");
+require_once("includes/header.php");
 if(isset($_SESSION["error"])){
     $messErr = $_SESSION["error"];
     unset($_SESSION["error"]);
@@ -15,7 +15,7 @@ if(isset($_SESSION["success"])){
 
     <!-- Navbar -->
     <?php
-require_once("includes\\navbar.php");
+require_once("includes//navbar.php");
 ?>
 
     <!-- Registration Form -->
@@ -65,7 +65,7 @@ require_once("includes\\navbar.php");
                         </form>
                     </div>
                     <div class="card-footer text-center">
-                        <p>Already have an account? <a href="login.html" class="text-primary">Login here</a></p>
+                        <p>Already have an account? <a href="login.php" class="text-primary">Login here</a></p>
                     </div>
                 </div>
             </div>
