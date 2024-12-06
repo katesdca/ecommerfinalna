@@ -2,10 +2,10 @@
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
 require_once("includes/header.php");
-if(isset($_SESSION["mali"])){
-    $messErr = $_SESSION["mali"];
+if(isset($_SESSION["error"])){
+    $messErr = $_SESSION["error"];
     echo $messErr;
-    unset($_SESSION["mali"]);
+    unset($_SESSION["error"]);
 }
 
 ?>

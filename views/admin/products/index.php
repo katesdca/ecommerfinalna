@@ -16,7 +16,7 @@ if(isset($_SESSION["success"])){
 include(ROOT_DIR. "app/product/get_product.php")
 ?>
 <?php
-require_once(ROOT_DIR."includes//navbar.php");
+require_once(ROOT_DIR."includes/navbar.php");
 ?>
     <!-- page guard  -->
     <?php require_once(ROOT_DIR."views/components/page-guard.php"); ?>
