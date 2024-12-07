@@ -6,7 +6,10 @@
     $db = new DatabaseConnect();
     $conn = $db->connectDB();
 
-   
+    if(!isset($_SESSION["username"])){
+        header("Location: ".BASE_URL."login.php");
+    }
+    
     $carts = [];
     $userId = $_SESSION["user_id"];
     $subtotal = 0;
